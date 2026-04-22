@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Tea Cozy - Contact</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+  <body>
+    <header class="header">
+        <img src="images/img-tea-cozy-logo.png">
+        <ul>
+            <li><a href="index.html">Strona Główna</a></li>
+            <li><a href="gallery.html">Galeria</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </header>
+    
+    <div>
+        <form>
+            <label for="email">adres email</label>
+            <input type="email" name="email" id="email" required placeholder="xxx@xx.pl">
+
+            <label for="subject">Temat wiadomości</label>
+            <select id="subject" name="subject">
+                <option value="question">Zapytanie o zamówienie</option>
+                <option value="question2">Zapytanie ogólne</option>
+                <option value="complain">Skarga</option>
+            </select>
+
+            <label for="message">Wiadomość</label>
+            <textarea id="message" name="message" required minlength ="10" placeholder="Napisz wiadomość"></textarea>
+            <button type = "submit" id = "send">Wyślij</button>
+        </form>
+    </div>
+    <fotter class="footer">
+       <p>Klaudia Ścigalska</p>
+    </footer>
+  </body>
+</html>
